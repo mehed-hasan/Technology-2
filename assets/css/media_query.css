@@ -11,7 +11,7 @@
     .learn_more_img img {
         position: absolute;
         left: 20px;
-        top: -35px;
+        top: -76px;
         width: 100%;
     }
 
@@ -46,6 +46,11 @@ a{
     margin-bottom: 32px;
 }
 
+
+/* About us  */
+#about_us p {
+    margin-bottom: 46px !important;
+}
 
 
 #newsletter input {
@@ -86,6 +91,10 @@ h4.footer_heading {
 
 
 @media screen and (max-width:992px){
+    #preloader img{
+        width: 225px;
+        height: auto;
+    }
     .gap{
         height: 30px;
     }
@@ -192,7 +201,7 @@ h4.footer_heading {
         }
 
         #about_us p {
-            margin-bottom: 49px;
+            margin-bottom: 24px !important;
         }
 
         /* Learn more  */
@@ -226,6 +235,10 @@ h4.footer_heading {
             width: 100% ;
             margin-top:55px;
         }
+
+        #client_say .comment_slider .slick-list.draggable{
+            margin-left: 0px;
+          }
 
         #client_say .comment_text {
             padding-bottom: 12px;
@@ -294,7 +307,9 @@ h4.footer_heading {
 }
 
 #footer .logo_social a {
-    margin-right: 15px;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+
 }
 }
 
@@ -335,7 +350,7 @@ h4.footer_heading {
 
         /* #process  */
         #process svg{
-            width: 177px;
+            width: 125px;
         }
 
         #process .first_flow {
@@ -351,6 +366,20 @@ h4.footer_heading {
             right: 10px;
             top: 351px;
             transform: rotate(-42deg);
+        }
+
+        #process .process_icons img {
+            height: 36px;
+            width: 36px;
+        }
+
+
+        /* Counter  */
+        #counter .counter_text span:nth-of-type(2) {
+            font-size: 12px;
+        }
+        #counter {
+            padding: 40px 0px;
         }
 
 
@@ -388,13 +417,15 @@ h4.footer_heading {
     #about_us p {
         margin-bottom: 30px;
         margin-top: 30px;
+        line-height: 19.52px;
+        text-align: justify;
     }
 
 
     /* Learn more  */
     #learn_more{
         margin-top: 50px;
-        min-height: 500px;
+        min-height: 450px;
         text-align: center;
     }
 
@@ -403,8 +434,27 @@ h4.footer_heading {
     }
     .learn_more_img img {
         left: 0%;
-        top: -62px;
+        top: -90px;
     }
+
+    #learn_more .learn_btn{
+        padding: 8px 16px;
+
+    }
+
+    /* Client say  */
+    #client_say .slick-dots {
+        margin: auto;
+        margin-top: 22px;
+    }
+    #client_say .slick-dots button {
+        height: 8px;
+        width: 8px;
+    }
+
+
+
+
 
     /* Footer  */
     #footer .logo_social{
@@ -432,12 +482,16 @@ h4.footer_heading {
             width: 245px;
         }
         #search_modal .search-wrapper .nav_search_close {
-            top: 50%;
+            top: -30px;
             width: 25px;
             left: 50%;
             transform: translate(10px, 10px);
             margin-top: 50px;
     
+        }
+        #search_modal .search-wrapper.active .nav_search_close {
+            top: 60%;
+            left: 40%;
         }
 
 
@@ -472,7 +526,7 @@ h4.footer_heading {
 
     /* Service  */
     #services .service {
-        padding: 5px;
+        padding: 15px 0px;
     }
 
     #services .service_col:hover .service_icon{
@@ -518,16 +572,25 @@ h4.footer_heading {
 
 
     /* Newsletter */
+
+    #newsletter {
+        padding: 50px 15px;
+    }
+
+
     #newsletter input {
         padding: 8px 20px;
+        margin-top: 45px;
+
     }
+
     .subscribe_btn {
-        padding: 8px 10px;
+        padding: 11px 10px;
         font-size: 10px;
     }
     #newsletter button {
         position: absolute;
-        top: 4px;
+        top: 1px;
         right: 2px;
     }
     #newsletter input::placeholder{
@@ -536,6 +599,13 @@ h4.footer_heading {
 
       span.log_in_text{
         display: none;
+    }
+
+
+    /* Footer  */
+    #footer .copy_write_text {
+        font-size: 10px;
+        padding-bottom: 14px;
     }
 
 

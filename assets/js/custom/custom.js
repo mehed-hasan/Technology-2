@@ -1,27 +1,17 @@
 
 
-
 // Code for preloader will be disappeared after all contents being loaded ----------------------------------------------------------*****
 $(window).on('load', function () {
-
     $(".left_bar ").fadeOut(500); 
     $(".left_bar img").fadeOut(200);
     $("#main").css({'overflow':'unset'}); 
-
 
 
 });
 // Code for preloader will be disappeared after all contents being loaded ######################################-------------------------- Ended 
 
 
-// Java script for dropdown with hover  *****************************
-// $('ul.navbar-nav li.dropdown').hover(function() {
-//     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-//   }, function() {
-//     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-//   });
 
-// Java script for dropdown with hover ended  ######################
 
 
   //Coding for custom search pop up animation ******************************
@@ -105,7 +95,7 @@ $(window).on('load', function () {
           slidesToScroll: 1,
           autoplay: false,
           infinite: true,
-          dots: false
+          dots: true
         }
       }
     
@@ -122,42 +112,39 @@ $(window).on('load', function () {
 // Company Slider animation  started from here *****************************************************-----------------------------
 
 
-
 $('.company_slider').slick({
   slidesToShow: 7,
   slidesToScroll: 1,
   autoplay: true,
   arrows:false,
   centerMode: true,
-  autoplaySpeed: 0,
-  speed:2000,
+  autoplaySpeed: 2000,
 
   responsive: [
   {
     breakpoint: 1024,
     settings: {
-      slidesToShow: 5,
+      slidesToShow: 4,
       slidesToScroll: 3,
-      autoplay: true,
       infinite: true,
       dots: false
     }
   },
-
   {
-    breakpoint: 480,
+    breakpoint: 600,
     settings: {
       centerMode: true,
+      centerPadding: '0px',
       slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-
+      slidesToScroll: 2
     }
   }
 
+  // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
 ]
 });
-
 
 
 
@@ -169,6 +156,8 @@ $('.company_slider').slick({
 // Wave animator for process section 
 $(document).ready(function(){
 
+  $window_width = $(window).width();
+ 
 
   $("#typed").typed({
     strings: ["SAAS.", "HTML.", "CSS."],
@@ -182,11 +171,63 @@ $(document).ready(function(){
   });
 
 
-  wave();
-  function wave(){
+  wave($window_width);
+  function wave($window_width){
 
 
+
+    // Code for flowing the path started ----------------------------
+    $(".flow svg path").css({'opacity': .1, 'fill':'#085BD8'});
     
+    $(".first_flow path").each(function(index){
+      (function(that, i) { 
+        var t = setTimeout(function() { 
+            $(that).css({ "opacity":1, "fill":"#085BD8"}); 
+        }, 700 * i);
+    })(this, index);
+
+
+
+    });
+
+   
+
+    if($window_width < 768){
+      setTimeout(function(){
+        $($(".last_flow path").get().reverse()).each(function(index){
+          (function(that, i) { 
+            var t = setTimeout(function() { 
+                $(that).css({ "opacity":1, "fill":"#085BD8"}); 
+            }, 700 * i);
+        })(this, index);
+  
+      });
+  
+  
+      },10000);
+  
+    }else{
+
+      setTimeout(function(){
+        $(".last_flow path").each(function(index){
+          (function(that, i) { 
+            var t = setTimeout(function() { 
+                $(that).css({ "opacity":1, "fill":"#085BD8"}); 
+            }, 700 * i);
+        })(this, index);
+  
+      });
+  
+  
+      },10000);
+  
+
+    }
+
+    // Code for flowing the path started ended ----------------------------  
+
+
+    // ------------
     for (let index = 0; index < 3; index++) {
       $("#process .first_process_elements .wave_"+index).addClass("rim"+index);
     }
