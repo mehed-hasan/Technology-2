@@ -183,7 +183,7 @@ $(document).ready(function(){
       (function(that, i) { 
         var t = setTimeout(function() { 
             $(that).css({ "opacity":1, "fill":"#085BD8"}); 
-        }, 700 * i);
+        }, 200 * i);
     })(this, index);
 
 
@@ -198,13 +198,13 @@ $(document).ready(function(){
           (function(that, i) { 
             var t = setTimeout(function() { 
                 $(that).css({ "opacity":1, "fill":"#085BD8"}); 
-            }, 700 * i);
+            }, 200 * i);
         })(this, index);
   
       });
   
   
-      },10000);
+      },5000);
   
     }else{
 
@@ -213,13 +213,13 @@ $(document).ready(function(){
           (function(that, i) { 
             var t = setTimeout(function() { 
                 $(that).css({ "opacity":1, "fill":"#085BD8"}); 
-            }, 700 * i);
+            }, 200 * i);
         })(this, index);
   
       });
   
   
-      },10000);
+      },5000);
   
 
     }
@@ -240,7 +240,7 @@ $(document).ready(function(){
         $("#process .second_process_elements .wave_"+index).addClass("rim"+index);
   
       }
-    },6000)
+    },3000)
   
   
     setTimeout(function(){
@@ -252,7 +252,7 @@ $(document).ready(function(){
   
       }
 
-    },12000)
+    },6000)
 
 
     setTimeout(function(){
@@ -263,7 +263,7 @@ $(document).ready(function(){
 
       wave();
 
-      },18000);
+      },9000);
 
 
   }

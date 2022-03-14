@@ -316,15 +316,16 @@ a.get_started_btn{
   padding: 5px 13px;
   border: solid 3px transparent;
   background: white;
-  border: 3px solid #3C31D9;
+  border: 1px solid #3C31D9;
   text-decoration: none;
   transition: 1s;
+  color: #3C31D9 !important;
 
 }
 a.get_started_btn:hover{
   background-color:rgb(8, 91, 216) ;
-  border:3px solid rgb(8, 91, 216) ;
-  color: white;
+  border:1px solid rgb(8, 91, 216) ;
+  color: white !important;
 }
 
 .linear_text{
@@ -1060,10 +1061,11 @@ color: #838383;
     border-radius: 50%;
     height: 100%;
     width: 100%;
-    border: white 5px solid;
     background: transparent;
     z-index: -1;
     transition: .1s;
+    border: none;
+    
   }
   
 
@@ -1083,7 +1085,6 @@ color: #838383;
     width: 0;
     height: 0;
     border: #085BD8 5px solid;
-    opacity: 1;
   }
   100% {
     top: calc(50% - 120px);
@@ -1094,10 +1095,6 @@ color: #838383;
     opacity: 0;
   }
 }
-
-/* #process .first_flow svg path{
-  opacity:.5;
-} */
 
 
 
