@@ -313,10 +313,10 @@ a.blue_btn:hover{
 a.get_started_btn{
   position: relative;
   border-radius: 10px;
-  padding: 5px 13px;
+  padding: 10px 20px;
   border: solid 3px transparent;
   background: white;
-  border: 1px solid #3C31D9;
+  border: 1px solid rgba(43, 69, 217, .4);
   text-decoration: none;
   transition: 1s;
   color: #3C31D9 !important;
