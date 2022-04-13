@@ -37,7 +37,7 @@
   }
 
   .gap{
-    height: 64px;
+    height: 65px;
   }
 
   .navbar-light .navbar-toggler {
@@ -46,7 +46,6 @@
 }
 
   /* Loder Css  */
-  
   #preloader{
     z-index: 1; 
   }
@@ -179,7 +178,7 @@
 
 
 
-/* Headings and p  size components css  ***********************************************************/
+/* Headings and p  size components css***********************************************************/
 
 .heading_1{
   font-style: normal;

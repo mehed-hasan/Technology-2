@@ -1,0 +1,125 @@
+/* About page hero section  */
+.about_us_hero h2{
+    max-width: 418px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 44px;
+}
+
+.about_us_hero {
+
+}
+
+
+.map{
+    background: url(../images/about_us/map.svg);
+    min-height: 350px;
+    background-size: contain;
+    width: 781px;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+.map {
+    display: flex;
+}
+
+.map .stats{
+    max-width:400px;
+    width: 100%;
+    margin: 0px auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+.map .clients img{
+    height: 32px;
+}
+.map .clients span:nth-of-type(1){
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #15253C;
+
+}
+.map .clients span:nth-of-type(2){
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: #686E75;
+}
+/* About page hero section ended */
+
+
+.achivements{
+    background: url(../images/about_us/Frame.png);
+    background-repeat: no-repeat;
+    background-origin: center;
+    background-position: center;
+    background-size: cover;
+    min-height: 194px;
+    border-radius: 10px;
+}
+
+.achivements .row{
+    min-height: 194px;
+    align-content: center;
+    max-width: 1400px;   
+    margin: auto;
+}
+.achivements .ach_elements img{
+    height: 52px;
+    width: 52px;
+}
+
+.achivements .ach_elements{
+    text-align: center;
+    padding: 26px 0px;
+}
+.ach_elements h1{
+    color: white;
+}
+
+ .ach_elements p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+}
+sup {
+    margin-left: -8px;
+}
+
+.missoin_header{
+    max-width: 557px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.missoin_header h2{
+    margin-bottom: 16px;
+}
+
+.missoin_header p{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #312E49;
+}
+
+.missions p{
+    margin-bottom: 52px;
+}
+
+.mission_stats{
+    display: flex;
+    justify-content: space-between;
+    max-width: 424px;
+}

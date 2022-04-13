@@ -186,12 +186,9 @@ $(document).ready(function(){
         }, 200 * i);
     })(this, index);
 
-
-
     });
 
    
-
     if($window_width < 768){
       setTimeout(function(){
         $($(".last_flow path").get().reverse()).each(function(index){
