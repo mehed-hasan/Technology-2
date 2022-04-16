@@ -311,6 +311,11 @@ h4.footer_heading {
     margin-left: 7.5px;
 
 }
+
+/* About page  */
+.all_missions .missions:nth-of-type(2) .missions_left {
+    padding-left: 0px;
+}
 }
 
 @media screen and (max-width:767px){
@@ -467,7 +472,31 @@ h4.footer_heading {
     margin-bottom: 19px;
 }
 
+/* ABout page  */
+.missions_left h3.heading_3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+p.mission_details{
+    text-align: center;
 
+}
+
+.missions .mission_number img{
+    margin-right: 0px;
+}
+.mission_stats{
+    padding-left: 0px;
+    max-width: inherit;
+}
+.missions .mission_number img{
+    height: 20px;
+    width: 20px;
+}
+.mission_no h3{
+    font-size: 14px;
+}
 }
 
 @media screen and (max-width:473px){
@@ -610,4 +639,8 @@ h4.footer_heading {
 
 
 }
+
+
+
+
 
