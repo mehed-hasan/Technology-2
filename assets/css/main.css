@@ -213,6 +213,35 @@
   text-transform: capitalize;
 }
 
+h5.custom_heading{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.date{
+font-style: normal;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+color: #312E49;
+opacity: 0.5;
+}
+
+a.view_btn{
+  padding: 10px 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #085BD8;
+  border-radius: 5px;
+  border: 1px solid #085BD8;
+  text-decoration: none;
+}
 
 p{
   color: #8B8B8B;
@@ -220,6 +249,10 @@ p{
 
 .gap{                   
   height: 64px;
+}
+
+.top_page_gap{
+  height: 106px;
 }
 
 
@@ -1719,4 +1752,41 @@ color: #FFFFFF;
 
 #mob_footer_part .contact{
   margin-top: 40px;
+}
+.dash{
+  width: 32px;
+height: 2px;
+
+background: #085BD8;
+}
+.project_showcase{
+  margin:56px 0px;
+}
+.project_showcase h2{
+  margin-bottom: 60px;
+  text-transform: capitalize;
+}
+.projects_slider{
+  max-width: 872px;
+  width: 100%;
+  margin: auto;
+}
+
+.projects_slider h3{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000000;
+  margin-top: 24px;
+  text-transform: capitalize;
+}
+.projects_slider .project p{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  color: #312E49;
+  opacity: 0.5;
+  margin-top: 24px;
 }
