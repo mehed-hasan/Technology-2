@@ -27,6 +27,10 @@ font-size: 14px !important;
 .heading_4{
 font-size: 13px !important;    
 }
+h5.custom_heading{
+    font-size: 20px !important;
+
+}
 p{
     font-size: 14px !important;
 }
@@ -109,6 +113,10 @@ h4.footer_heading {
         }
         .heading_4{
         font-size: 16px !important;    
+        }
+        h5.custom_heading{
+            font-size: 16px !important;
+        
         }
         p{
             font-size: 12px !important;
@@ -316,6 +324,17 @@ h4.footer_heading {
 .all_missions .missions:nth-of-type(2) .missions_left {
     padding-left: 0px;
 }
+
+/* Portfolio  */
+.top_page_gap {
+    height: 40px;
+}
+.heading_and_filter .filter select {
+    max-width: 412px;
+    width: 90%;
+    padding: 8px 26px;
+}
+
 }
 
 @media screen and (max-width:767px){
@@ -497,6 +516,29 @@ p.mission_details{
 .mission_no h3{
     font-size: 14px;
 }
+
+/* Portfolio */
+.portfolio{
+    margin-bottom: 30px;
+}
+
+.portfolio_list h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.portfolio_list .portfolio:nth-of-type(3){
+    margin-bottom: 30px;
+}
+.heading_and_filter h2{
+    text-align: center;
+    margin-bottom: 24px;
+}
+.heading_and_filter .filter {
+    justify-content: center;
+}
+.pagination{
+    margin-bottom: 40px;
+}
 }
 
 @media screen and (max-width:473px){
@@ -602,9 +644,9 @@ p.mission_details{
 
     /* Newsletter */
 
-    #newsletter {
+    /* #newsletter {
         padding: 50px 15px;
-    }
+    } */
 
 
     #newsletter input {
