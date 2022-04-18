@@ -247,6 +247,11 @@ p{
   color: #8B8B8B;
 }
 
+.min_content{
+  max-width: 1096px;
+  width: 100%;
+  margin: auto;
+}
 .gap{                   
   height: 64px;
 }
@@ -283,6 +288,31 @@ a.blue_btn {
   border: 1px solid transparent;
 
 }
+
+
+a.theme_fat_btn,  button.theme_fat_btn {
+  background: #085BD8;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 149.2%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: .5s;
+}
+
+a.theme_fat_btn:hover ,  button.theme_fat_btn:hover {
+  background: #ffffff;
+  color: #085BD8;
+  border: 1px solid #085BD8;
+}
+
+
 
 a.blue_btn:hover{
   background: #ffffff;
@@ -1753,40 +1783,11 @@ color: #FFFFFF;
 #mob_footer_part .contact{
   margin-top: 40px;
 }
+
+
 .dash{
   width: 32px;
 height: 2px;
 
 background: #085BD8;
-}
-.project_showcase{
-  margin:56px 0px;
-}
-.project_showcase h2{
-  margin-bottom: 60px;
-  text-transform: capitalize;
-}
-.projects_slider{
-  max-width: 872px;
-  width: 100%;
-  margin: auto;
-}
-
-.projects_slider h3{
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 140%;
-  color: #000000;
-  margin-top: 24px;
-  text-transform: capitalize;
-}
-.projects_slider .project p{
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 140%;
-  color: #312E49;
-  opacity: 0.5;
-  margin-top: 24px;
 }
