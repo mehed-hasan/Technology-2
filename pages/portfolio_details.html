@@ -25,14 +25,26 @@
     <main id="main">
 
       <!-- preloader section started -->
-      <!-- <section id="preloader" >
+      <section id="preloader" >
 
         <div class="left_bar">
           <img src="../../assets/images/banner/r.gif" alt="" srcset="">
         </div>
-      </section> -->
+      </section>
       <!-- preloader section ended   -->
 
+
+            <!-- Search modal has been started   -->
+     <section id="search_modal">
+      <div class="search-wrapper">
+        <div class="input-holder">
+            <input type="text" class="search-input" placeholder="Type to search" />
+            <button class="search-icon nav_search" > <img src="../assets/images/icons/Search.svg" alt="" srcset=""></button>
+        </div>
+        <span class="nav_search_close"><img src="../assets/images/icons/close.svg" alt="" srcset=""></span>
+    </div>
+   </section>
+   <!-- Search modal has been ended  -->
 
          <!-- Header section started  -->
          <section id="header" >
@@ -53,8 +65,8 @@
               </a>            
 
               <!-- Logo for mobile screen  -->
-               <a class="navbar-brand m-auto  m-md-auto m-sm-auto " href="#">
-                <img class="img-fluid" src="../../assets/images/logo/dark_logo.svg" alt="" srcset="">
+               <a class="navbar-brand m-auto  m-md-auto m-sm-auto " href="../index.html">
+                <img class="img-fluid" src="../assets/images/logo/dark_logo.svg" alt="" srcset="">
                </a>
                <!-- Logo for mobile screen  ended-->
 
@@ -78,11 +90,11 @@
                <div class="collapse navbar-collapse " id="navbarSupportedContent">
                  <ul class="navbar-nav  m-auto mb-2  mb-lg-0 ">
 
-                   <li class="nav-item active ">
-                     <a class="nav-link" aria-current="page" href="#">Home</a>
+                   <li class="nav-item  ">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                    </li>
 
-                   <li class="nav-item dropdown ">
+                   <!-- <li class="nav-item dropdown ">
                      <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                        Services 
                        <span >
@@ -103,34 +115,22 @@
                        <li><a class="dropdown-item" href="#">Service Three</a></li>
                      </ul>
 
-                   </li>
-                   <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Solutions 
-                      <span >
-                       <svg class="arrow" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M1.00098 0.846191L7.00098 6.84619L13.001 0.846191" stroke="url(#paint0_linear_635_700)" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                         <defs>
-                         <linearGradient id="paint0_linear_635_700" x1="7.00098" y1="6.84619" x2="7.00098" y2="0.846191" gradientUnits="userSpaceOnUse">
-                         <stop stop-color="#182A44"/>
-                         <stop offset="1" stop-color="#3C5271"/>
-                         </linearGradient>
-                         </defs>
-                         </svg>
-                      </span>
-                    </a>
-                    <ul class="dropdown-menu mt-3 rounded p-0" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Solutions One</a></li>
-                      <li><a class="dropdown-item" href="#">Solutions Two</a></li>
-                      <li><a class="dropdown-item" href="#">Solutions Three</a></li>
-                    </ul>
+                   </li> -->
 
-                  </li>
                    <li class="nav-item hover_able">
-                    <a class="nav-link" href="#">Casestudy</a>
+                    <a class="nav-link" href="../pages/about_us.html">About Us</a>
                   </li>
+
+                   <li class="nav-item hover_able">
+                    <a class="nav-link" href="../pages/case_study.html">Casestudy</a>
+                  </li>
+
+                  <li class="nav-item hover_able active">
+                    <a class="nav-link" href="../pages/portfolio.html">Portfolio</a>
+                  </li>
+
                   <li class="nav-item test hover_able">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="../pages/contact.html">Contact Us</a>
                   </li>
                  </ul>
 
@@ -178,7 +178,7 @@
 
                 <div class="about_portfolio">
                    <div class="row">
-                       <div class="col-12 col-md-8">
+                       <div class="col-12 col-lg-8">
                         <div class="about">
                             <h5 class="custom_heading">About</h5>
 
@@ -195,7 +195,7 @@
                             </p>
                        </div>
                        </div>
-                       <div class="col-12 col-md-4">
+                       <div class="col-12 col-lg-4">
                         <div class="info">
                             <table>
 
@@ -460,7 +460,7 @@
                       <h4 class="footer_heading heading_4">COMPANY</h4>
                       <div class="useful_links">
                         <ul>
-                          <li><a href="">About us</a></li>
+                          <li><a href="../pages/about_us.html">About us</a></li>
                           <li><a href="">Privacy notice</a></li>
                         </ul>
                       </div>
@@ -550,8 +550,6 @@
       <!-- Core Js  -->
 
       <script src="../assets/js/core/jquery-3.6.0.js" type="text/javascript"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" type="text/javascript"></script>
-      <script src="../assets/plugins/particles/pt.js" type="text/javascript"></script>
       <script src="../assets/js/core/popper.min.js" type="text/javascript" ></script>
       <script src="../assets/js/core/bootstrap.min.js" type="text/javascript" ></script>
       <!-- Plugin Js  -->
@@ -586,7 +584,21 @@
           slidesToScroll: 1,
           autoplay: false,
           infinite: true,
-          dots: false
+          dots: false,
+          centerMode: true,
+          centerPadding: '40px',
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          infinite: true,
+          dots: false,
+          centerMode: true,
+          centerPadding: '80px',
         }
       }
     

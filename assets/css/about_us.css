@@ -203,6 +203,7 @@ p.mission_details{
     line-height: 140%;
     color: #312E49;
     margin-bottom: 20px;
+    text-transform: capitalize;
 }
 
 .business_left p{
@@ -264,6 +265,7 @@ p.mission_details{
     line-height: 150%;
     padding-top: 15px;
     color: #312E49;;
+    opacity: 0.5;
 }
 
 .business .accordion-button{
@@ -271,6 +273,7 @@ p.mission_details{
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
+    border-radius: 5px;
 }
 
 
@@ -287,7 +290,7 @@ p.mission_details{
     text-align: center;
 }
 
-.get_started h3{
+.get_started h4{
 font-style: normal;
 font-weight: 700;
 font-size: 24px;

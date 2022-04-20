@@ -25,7 +25,7 @@ font-size: 26px !important;
 font-size: 14px !important;
 }
 .heading_4{
-font-size: 13px !important;    
+font-size: 18px !important;    
 }
 h5.custom_heading{
     font-size: 20px !important;
@@ -91,6 +91,15 @@ h4.footer_heading {
     margin-right: 15px;
 }
 
+/* case_study page  */
+h1.big_font{
+    font-size: 36px;
+}
+
+.isotop .button-group .button{
+    font-size: 18px;
+}
+
 }
 
 
@@ -119,7 +128,7 @@ h4.footer_heading {
         
         }
         p{
-            font-size: 12px !important;
+            font-size: 14px !important;
         }
         a{
             font-size: 12px !important;
@@ -335,9 +344,40 @@ h4.footer_heading {
     padding: 8px 26px;
 }
 
+    /* about_portfolio section  */
+    .about_portfolio .info {
+        max-width: 396px;
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        box-shadow: 0px 0px 5px rgb(8 91 216 / 7%);
+        border-radius: 0px 0px 5px 5px;
+        padding: 43px 17px;
+        margin-bottom: 40px;
+    }
+
+
+    /* case_study page  */
+h1.big_font{
+    font-size: 30px;
 }
 
-@media screen and (max-width:767px){
+.isotop .button-group .button{
+    font-size: 16px;
+}
+
+.isotop .button_and_heading {
+    display: initial;
+    text-align: center;
+
+}
+.isotop .button-group{
+    margin-bottom: 30px;
+}
+
+}
+
+@media screen and (max-width:768px){
 
 
     /* Search  */
@@ -539,7 +579,146 @@ p.mission_details{
 .pagination{
     margin-bottom: 40px;
 }
+
+
+/* About us page responsive  */
+.map{
+    min-height: 200px;
+    background-position: bottom;
 }
+.about_us_hero h2{
+    max-width: 329px;
+    width: 100%;
+}
+.map .stats{
+    text-align: center;
+}
+.map .clients span:nth-of-type(2){
+    display: inline-block;
+}
+
+/* Achivement section  */
+.achivements{
+    background: url(../images/about_us/mob.svg.svg);
+    background-repeat: no-repeat;
+    padding: 60px 0px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* Mission vission section  */
+.missoin_header {
+    margin-bottom: 30px;
+}
+
+.missoin_header p{
+    max-width: 346px;
+    width: 100%;
+    margin: auto;
+}
+
+p.mission_details{
+    max-width: 305px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+    /* Business section  */
+    .business .accordion-button{
+        font-size: 14px;
+    }
+
+    /* get started section  */
+    .get_started{
+        padding-top: 124px;
+        padding-bottom: 64px;
+        background-image: url(../images/about_us/mob_bg_2.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: center;
+    }
+
+
+    /* Case study and portfolio details page  */
+    .portfolio_bg, .case_portfolio_bg{
+        min-height: 150px;
+    }
+
+
+
+    .result_numbers{
+        text-align: center;
+    }
+    .results .result_numbers p{
+        margin-bottom: 30px;
+    }
+    .portfolio_desc h5 {
+        margin-bottom: 16px;
+    }
+
+    .project_showcase h2 {
+        margin-bottom: 30px;
+
+    }
+    .project  {
+    padding: 0px 5px;
+}
+.projects_slider h3{
+    font-size: 16px !important;
+}
+
+
+   /* ISotop  */
+   .isotop .button-group .button {
+    font-size: 12px;
+    margin: 11px 0px;
+}
+.button-group.filters-button-group {
+    max-width: 290px;
+    margin: auto;
+}
+
+h1.big_font{
+    font-size: 24px;
+}
+.case_banner_left{
+    text-align: center;
+}
+.case_banner img{
+    width: 70%;
+}
+.isotop{
+    margin: 45px 0px;
+}
+.case_banner_left .theme_fat_btn{
+    padding:10px 25px;
+}
+.case_banner_left p{
+    margin-bottom: 27px;
+}
+
+.contact_right {
+    width: 100%;
+    margin-left: initial;
+}
+button.theme_fat_btn{
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+.contact_us form input, .contact_us form textarea{
+    padding: 10px 40px
+}
+.contact_us form svg {
+    top: 10px;
+    left: 8px;
+
+}
+}
+
+
 
 @media screen and (max-width:473px){
 
@@ -679,6 +858,7 @@ p.mission_details{
         padding-bottom: 14px;
     }
 
+ 
 
 }
 
