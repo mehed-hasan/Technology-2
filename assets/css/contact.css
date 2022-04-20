@@ -57,7 +57,7 @@ margin-bottom: 24px;
     position: absolute;
     top: 16px;
     left: 24px;
-    z-index: 999;
+    z-index: 2;
 }
 
 .contact_right{

@@ -44,17 +44,13 @@
     border: none;
 }
 
-  /* Loder Css  */
-  #preloader{
-    z-index: 1; 
-  }
 
   .left_bar{
     position: absolute;
     width:100%;
     height: 100%;
     background: white;
-    z-index: 1;
+    z-index: 100;
 
   }
 
