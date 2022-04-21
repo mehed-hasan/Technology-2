@@ -268,7 +268,7 @@ p{
   color: #000000;
 }
 
-a.blue_btn {
+.blue_btn {
   background: #085BD8;;
   display: inline-block;  
   border-radius: 39px;
@@ -281,6 +281,14 @@ a.blue_btn {
   padding: 10px 42.5px;
   transition: .3s;
   border: 1px solid transparent;
+
+}
+
+.blue_btn:hover {
+  background: white;;
+  color: #085BD8;
+  border: 1px solid #085BD8;
+
 
 }
 
@@ -419,7 +427,7 @@ border: none;
   height: 0%;
   width: 100%;
   background: linear-gradient(329.39deg, #085BD8 -10.96%, rgba(8, 91, 216, 0.4) 70.96%);
-  z-index: 1;
+  z-index: 999;
   filter: blur(10px 20px);
 
 }
