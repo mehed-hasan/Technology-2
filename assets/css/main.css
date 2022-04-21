@@ -252,7 +252,7 @@ p{
 }
 
 .top_page_gap{
-  height: 106px;
+  height: 64px;
 }
 
 
@@ -400,7 +400,7 @@ a.get_started_btn:hover{
   background: linear-gradient(90deg, #432BDA 0%, #086AD8 102.3%);
   justify-content: center;
   align-items: center;
-  padding: 15px 30px;
+  padding: 8px 30px;
   color: white;
   position: absolute;
   border-radius: 10px;
@@ -426,6 +426,7 @@ border: none;
 
 #search_modal ::-webkit-input-placeholder { /* Edge */
   color: rgba(255,255,255,.5);
+  font-size: 16px;
 }
 
 #search_modal .search-wrapper {
@@ -1556,7 +1557,7 @@ margin: auto;
   position: relative;
 }
 #newsletter input{
-  padding: 23px 50px;
+  padding: 16px 24px;
   margin-top: 82px;
   background: #FFFFFF;
   box-shadow: 0px 0px 31px rgba(0, 0, 0, 0.08);
