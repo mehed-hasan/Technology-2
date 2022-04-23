@@ -149,14 +149,15 @@ $('.company_slider').slick({
 
 
 
-
-
+// window.addEventListener('resize', function(){
+//   wave();
+// });
 
 
 // Wave animator for process section 
 $(document).ready(function(){
 
-  $window_width = $(window).width();
+  wave();
  
 
   $("#typed").typed({
@@ -170,11 +171,12 @@ $(document).ready(function(){
     contentType: 'html'
   });
 
-
-  wave($window_width);
-  function wave($window_width){
+});
 
 
+  function wave(){
+
+    $window_width = $(window).width();
 
     // Code for flowing the path started ----------------------------
     $(".flow svg path").css({'opacity': .1, 'fill':'#085BD8'});
@@ -190,6 +192,7 @@ $(document).ready(function(){
 
    
     if($window_width < 768){
+      // Mobile
       setTimeout(function(){
         $($(".last_flow path").get().reverse()).each(function(index){
           (function(that, i) { 
@@ -199,12 +202,11 @@ $(document).ready(function(){
         })(this, index);
   
       });
-  
-  
+
       },5000);
   
     }else{
-
+      // Desktop
       setTimeout(function(){
         $(".last_flow path").each(function(index){
           (function(that, i) { 
@@ -217,7 +219,6 @@ $(document).ready(function(){
   
   
       },5000);
-  
 
     }
 
@@ -268,7 +269,6 @@ $(document).ready(function(){
 
 
 
-});
 
 
 // Counter animation has started 
