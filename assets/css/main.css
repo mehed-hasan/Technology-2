@@ -1435,7 +1435,7 @@ border-radius: 4px;
 }
 #client_say .heading_2{
   margin-bottom: 20px;
-
+ text-transform: capitalize;
 }
 #client_say .comment_text p{
 font-style: normal;
