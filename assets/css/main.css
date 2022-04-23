@@ -1136,10 +1136,10 @@ color: #838383;
   
 
   .rim1 {
-    -webkit-animation: expand 2s linear .6s infinite;
+    -webkit-animation: expand 1.5s linear .6s infinite;
   }
   .rim2 {
-    -webkit-animation: expand 2s linear .4s infinite;
+    -webkit-animation: expand 1.5s linear .4s infinite;
   }
   
 /* } */

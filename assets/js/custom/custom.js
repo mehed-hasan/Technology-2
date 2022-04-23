@@ -178,51 +178,11 @@ $(document).ready(function(){
 
     $window_width = $(window).width();
 
-    // Code for flowing the path started ----------------------------
-    $(".flow svg path").css({'opacity': .1, 'fill':'#085BD8'});
-    
-    $(".first_flow path").each(function(index){
-      (function(that, i) { 
-        var t = setTimeout(function() { 
-            $(that).css({ "opacity":1, "fill":"#085BD8"}); 
-        }, 200 * i);
-    })(this, index);
 
-    });
 
-   
-    if($window_width < 768){
-      // Mobile
-      setTimeout(function(){
-        $($(".last_flow path").get().reverse()).each(function(index){
-          (function(that, i) { 
-            var t = setTimeout(function() { 
-                $(that).css({ "opacity":1, "fill":"#085BD8"}); 
-            }, 200 * i);
-        })(this, index);
-  
-      });
 
-      },5000);
-  
-    }else{
-      // Desktop
-      setTimeout(function(){
-        $(".last_flow path").each(function(index){
-          (function(that, i) { 
-            var t = setTimeout(function() { 
-                $(that).css({ "opacity":1, "fill":"#085BD8"}); 
-            }, 200 * i);
-        })(this, index);
-  
-      });
-  
-  
-      },5000);
 
-    }
-
-    // Code for flowing the path started ended ----------------------------  
+        // Code for flowing the path started ended ----------------------------  
 
 
     // ------------
@@ -238,7 +198,7 @@ $(document).ready(function(){
         $("#process .second_process_elements .wave_"+index).addClass("rim"+index);
   
       }
-    },3000)
+    },2000)
   
   
     setTimeout(function(){
@@ -250,7 +210,7 @@ $(document).ready(function(){
   
       }
 
-    },6000)
+    },4000)
 
 
     setTimeout(function(){
@@ -261,7 +221,57 @@ $(document).ready(function(){
 
       wave();
 
-      },9000);
+      },6000);
+
+
+
+
+
+    // Code for flowing the path started ----------------------------
+    $(".flow svg path").css({'opacity': .1, 'fill':'#085BD8'});
+    
+    $(".first_flow path").each(function(index){
+      (function(that, i) { 
+        var t = setTimeout(function() { 
+            $(that).css({ "opacity":1, "fill":"#085BD8"}); 
+        }, 100 * i);
+    })(this, index);
+
+    },2500);
+
+   
+    if($window_width < 768){
+      // Mobile
+      setTimeout(function(){
+        $($(".last_flow path").get().reverse()).each(function(index){
+          (function(that, i) { 
+            var t = setTimeout(function() { 
+                $(that).css({ "opacity":1, "fill":"#085BD8"}); 
+            }, 100 * i);
+        })(this, index);
+  
+      });
+
+      },2500);
+  
+    }else{
+      // Desktop
+      setTimeout(function(){
+        $(".last_flow path").each(function(index){
+          (function(that, i) { 
+            var t = setTimeout(function() { 
+                $(that).css({ "opacity":1, "fill":"#085BD8"}); 
+            }, 100 * i);
+        })(this, index);
+  
+      });
+  
+  
+      },2500);
+
+    }
+
+
 
 
   }
