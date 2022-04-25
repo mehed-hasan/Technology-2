@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
   }
-
+  html {
+    scroll-behavior: smooth;
+  }
   body{
     font-family: 'Inter', sans-serif;
     }
@@ -1676,9 +1678,13 @@ text-decoration: none;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
-line-height: 19px;
+line-height: 27px;
 text-transform: capitalize;
 color: #ACACAC;
+transition: .5s;
+}
+.useful_links ul li a:hover{
+  color:#085BD8;
 }
 
 .footer_content{
