@@ -18,7 +18,7 @@ $(document).ready(function(){
     $("#main").css({'overflow':'hidden'}); 
     $("#search_modal").animate({'height':'100%'},350);
     $(".search-wrapper").css({'display':'block'});
-    $(".search-wrapper img").show(150);
+    $(".search-wrapper img").show(150); 
 
     setTimeout(function(){
       searchToggle();
@@ -264,13 +264,9 @@ $(document).ready(function(){
   
       });
   
-  
       },2500);
 
     }
-
-
-
 
   }
 
